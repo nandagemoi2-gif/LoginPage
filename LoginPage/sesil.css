@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Background pastel gradasi */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ffd6e8, #c8f7ff, #fff3b0, #e0c3fc);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+}
+
+/* Animasi background */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card login */
+form {
+    background: #ffffff;
+    padding: 40px;
+    width: 350px;
+    border-radius: 35px;
+    box-shadow: 0 15px 40px rgba(255, 182, 193, 0.5);
+    text-align: center;
+    position: relative;
+    border: 6px solid #ffb6c1;
+}
+
+/* Efek topping di atas */
+form::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 40px;
+    background: #ff69b4;
+    border-radius: 20px 20px 50px 50px;
+}
+
+/* Judul */
+h2 {
+    margin-bottom: 25px;
+    color: #ff69b4;
+    font-size: 28px;
+}
+
+/* Label */
+label {
+    font-size: 14px;
+    color: #ff85a2;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: 2px solid #ffcce0;
+    outline: none;
+    background: #fff0f5;
+    transition: 0.3s;
+}
+
+/* Efek focus */
+input:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 12px rgba(255, 105, 180, 0.4);
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff9a9e, #fecfef);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover tombol */
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+}
+
+/* Link */
+p {
+    margin-top: 15px;
+    color: #ff85a2;
+}
+
+a {
+    text-decoration: none;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
